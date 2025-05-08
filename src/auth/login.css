@@ -1,0 +1,186 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ede9fe;
+} */
+
+/* Container around the login box */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ede9fe;
+}
+.login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login form box */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Social login buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.google-btn,
+.apple-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease-in-out;
+}
+
+.google-btn:hover,
+.apple-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.google-btn img,
+.apple-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Divider text */
+.divider {
+  text-align: center;
+  color: #888;
+  margin: 15px 0;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #6a5acd;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(61, 199, 167);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgb(45, 187, 154);
+}
+
+/* Signup link */
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-link a {
+  color: #6a5acd;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+/* Smooth scale transition for all main buttons */
+.google-btn,
+.apple-btn,
+.login-btn,
+.signup-btn {
+  /* width: 200px; */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover grow */
+.google-btn:hover,
+.apple-btn:hover,
+.login-btn:hover,
+.signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Click shrink */
+.google-btn:active,
+.apple-btn:active,
+.login-btn:active,
+.signup-btn:active {
+  transform: scale(0.95);
+}
+/* Apply smooth scale and shadow transition to all buttons and clickable divs */
+
+.google-btn,
+.apple-btn {
+  height: 50px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Grow on hover */
+
+.google-btn:hover,
+.apple-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Shrink on click (active state) */
+button:active,
+.google-btn:active,
+.apple-btn:active {
+  transform: scale(0.95);
+}
